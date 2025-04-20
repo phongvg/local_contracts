@@ -1,0 +1,26 @@
+{
+  "name": "web3_contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost",
+    "mint": "hardhat run scripts/mint.ts --network localhost",
+    "check": "hardhat run scripts/checkBalance.ts --network localhost",
+    "transfer": "hardhat run scripts/transfer.ts --network localhost",
+    "fund": "hardhat run scripts/fund.ts --network localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.3.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.23.0",
+    "typescript": "^5.8.3"
+  }
+}
