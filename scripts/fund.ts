@@ -5,7 +5,7 @@ async function main() {
   const to = "0xA17BD2a15fc0710302aDcAD291E1adD8FD332031";
   const tx = await signer.sendTransaction({
     to,
-    value: ethers.parseEther("10"), // Gửi 10 ETH test
+    value: ethers.parseEther("10"),
   });
   await tx.wait();
 
